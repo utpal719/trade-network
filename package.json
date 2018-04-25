@@ -2,11 +2,9 @@
   "engines": {
     "composer": "^0.11.0 || ^0.12.0 || ^0.13.0"
   },
-  "name": "my-network",
+  "name": "trade-network",
   "version": "0.1.6",
-  "description": "My Commodity Trading network",
-  "networkImage": "https://hyperledger.github.io/composer-sample-networks/packages/basic-sample-network/networkimage.svg",
-  "networkImageanimated": "https://hyperledger.github.io/composer-sample-networks/packages/basic-sample-network/networkimageanimated.svg",
+  "description": "Trading network",
   "scripts": {
     "prepublish": "mkdirp ./dist ; composer archive create --sourceType dir --sourceName . -a ./dist/my-network.bna",
     "pretest": "npm run lint",
@@ -18,10 +16,6 @@
     "test-inner": "mocha -t 0 --recursive && cucumber-js",
     "test-cover": "nyc npm run test-inner",
     "test": "npm run test-inner"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hyperledger/composer-sample-networks.git"
   },
   "keywords": [
     "sample",
